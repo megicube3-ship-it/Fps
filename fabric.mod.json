@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "fpsgovernor",
+  "version": "${version}",
+  "name": "FPS Governor",
+  "description": "Auto-tuner FPS client-side: menurunkan render distance, entity distance, dan partikel secara bertahap saat FPS di bawah target (sadar shader Iris), lalu mengembalikannya saat aman. Pengaturan asli pemain selalu dipulihkan.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.fpsgov.FpsGovernorClient"]
+  },
+  "mixins": ["fpsgovernor.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
